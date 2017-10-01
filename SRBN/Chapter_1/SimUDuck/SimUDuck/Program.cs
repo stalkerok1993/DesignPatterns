@@ -42,6 +42,11 @@ namespace SimUDuck
             model.PerformFly();
 
             Console.WriteLine();
+            Console.WriteLine("-> Class not in duck hierarchy using duck behavior.");
+            var soundSynthesizer = new SoundSynthesizer();
+            soundSynthesizer.DuckSound();
+
+            Console.WriteLine();
             Console.WriteLine("Press any key to continue. . .");
             Console.ReadKey();
         }
