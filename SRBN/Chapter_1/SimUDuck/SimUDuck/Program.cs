@@ -29,6 +29,17 @@ namespace SimUDuck
             decoy.Display();
             decoy.PerformQuack();
             decoy.PerformFly();
+            
+            Console.WriteLine();
+            Console.WriteLine("-> Test runtime behavior change.");
+            var model = new ModelDuck();
+            model.Display();
+            model.PerformQuack();
+            model.PerformFly();
+
+            model.FlyBehavior = new FlyRocketPowered();
+            Console.WriteLine("Fly behavior of ModelDuck was changed and now it's...");
+            model.PerformFly();
 
             Console.WriteLine();
             Console.WriteLine("Press any key to continue. . .");
