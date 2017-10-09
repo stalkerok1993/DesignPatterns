@@ -42,11 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Display\CurrentConditionsDisplay.cs" />
+    <Compile Include="Display\ForecastDisplay.cs" />
+    <Compile Include="Display\HeatIndexDisplay.cs" />
     <Compile Include="Display\IWeatherDisplay.cs" />
-    <Compile Include="Display\IWeatherObserver.cs" />
+    <Compile Include="Display\IObserver.cs" />
+    <Compile Include="Display\StatisticsDisplay.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeatherData\IWeatherSubject.cs" />
+    <Compile Include="WeatherData\ISubject.cs" />
     <Compile Include="WeatherData\WeatherData.cs" />
   </ItemGroup>
   <ItemGroup>

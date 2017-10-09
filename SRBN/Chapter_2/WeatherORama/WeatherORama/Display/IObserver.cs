@@ -2,8 +2,8 @@
 
 namespace WeatherORama.Display
 {
-    interface IWeatherObserver
+    interface IObserver
     {
-        void Update(IWeatherSubject subject);
+        void Update(IObservable subject);
     }
 }
