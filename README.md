@@ -5,7 +5,7 @@ If there are some questions write to stalkerok1993@gmail.com.
 
 ## Directory structure
 Please keed next directory structure for your projects:
-<you'r initials>/<chapter (if any) or theme>/<sol. folder>/<*.sln file & project folders>
+<you'r initials>/<chapter (if any) or theme>/<sln folder>/<*.sln file & project folders>
 Example: SRBN/Chapter_1/SimUDuck/<solution goes here>
 
 ## Rights
