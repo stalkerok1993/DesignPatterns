@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WeatherORama.Display.CurrentConditionsDisplay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAIAAAAAAQAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Display\CurrentConditionsDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherORama.Display.ForecastDisplay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAgQAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Display\ForecastDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherORama.Display.HeatIndexDisplay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Display\HeatIndexDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherORama.Display.StatisticsDisplay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAAEAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Display\StatisticsDisplay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WeatherORama.WeatherData.WeatherObject" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <AssociationLine Name="observers" Type="WeatherORama.Display.IObserver" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="3.125" />
+        <Point X="2.375" Y="3.125" />
+        <Point X="2.375" Y="0.688" />
+        <Point X="4" Y="0.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAgAAAAAAAABAAAAAgAAIAAAAAAAAgAkAAA=</HashCode>
+      <FileName>WeatherData\WeatherData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="observers" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="WeatherORama.Display.IObserver">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Display\IObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherORama.Display.IWeatherDisplay">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Display\IWeatherDisplay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WeatherORama.WeatherData.IObservable">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WeatherData\ISubject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
