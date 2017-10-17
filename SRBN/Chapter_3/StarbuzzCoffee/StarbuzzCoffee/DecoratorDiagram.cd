@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarbuzzCoffee.Beverage.AbstractBeverage">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAggAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\AbstractBeverage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Size" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.DarkRoast" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\DarkRoast.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Decaf" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Decaf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Espresso" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Espresso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.HouseBlend" Collapsed="true">
+    <Position X="2.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\HouseBlend.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Condiment.CondimentDecorator" Collapsed="true">
+    <Position X="11.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Condiment\CondimentDecorator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Condiment.Milk" Collapsed="true">
+    <Position X="14.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Condiment\Milk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Condiment.Mocha" Collapsed="true">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Condiment\Mocha.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Condiment.Soy" Collapsed="true">
+    <Position X="10.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Condiment\Soy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarbuzzCoffee.Beverage.Condiment.Whip" Collapsed="true">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\Condiment\Whip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StarbuzzCoffee.Beverage.BeverageSize" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAgAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Beverage\BeverageSize.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
