@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PizzaStore.Pizza
 {
-    interface IPizza
+    enum PizzaType
     {
-        void Prepare();
-        void Bake();
-        void Cut();
-        void Box();
+        Cheese,
+        Clam,
+        Pepperoni,
+        Veggie
     }
 }

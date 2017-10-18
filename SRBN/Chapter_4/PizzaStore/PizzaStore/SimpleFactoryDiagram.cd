@@ -1,60 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Clients, like SimplePizzaStore, can use CreatePizza method (eather it's static or not) to instantiate concrete instance extending APizza interface.">
+    <Position X="0.562" Y="1.813" Height="0.979" Width="1.888" />
+  </Comment>
   <Class Name="PizzaStore.Factory.SimplePizzaFactory">
-    <Position X="3" Y="0.5" Width="1.75" />
+    <Position X="3.25" Y="0.5" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Factory\SimplePizzaFactory.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PizzaStore.Pizza.CheesePizza" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="5" Y="2.5" Width="1.5" />
+    <Position X="5.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza\CheesePizza.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaStore.Pizza.ClamPizza" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="6.5" Y="3.25" Width="1.5" />
+    <Position X="6.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza\ClamPizza.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaStore.Pizza.PepperoniPizza" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="7.25" Y="2.5" Width="1.5" />
+    <Position X="7.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza\PepperoniPizza.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaStore.Pizza.VeggiePizza" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="8.75" Y="3.25" Width="1.5" />
+    <Position X="9" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pizza\VeggiePizza.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="PizzaStore.PizzaStore">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+  <Class Name="PizzaStore.Pizza.APizza" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA=</HashCode>
-      <FileName>PizzaStore.cs</FileName>
+      <HashCode>AAQAAEAAAAAAQAAAAAAAAAQAAAIABAAAAAAAAAAAQQA=</HashCode>
+      <FileName>Pizza\APizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Factory.SimplePizzaStore">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\SimplePizzaStore.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="factory" />
     </ShowAsAssociation>
   </Class>
-  <Interface Name="PizzaStore.Pizza.IPizza">
-    <Position X="7" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAIAAAAAAAAAAAAAQAA=</HashCode>
-      <FileName>Pizza\IPizza.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -4,9 +4,9 @@ namespace PizzaStore.Factory
 {
     class SimplePizzaFactory
     {
-        public IPizza CreatePizza(string type)
+        public APizza CreatePizza(string type)
         {
-            IPizza pizza = null;
+            APizza pizza = null;
 
             if (type.Equals("cheese"))
             {

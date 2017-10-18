@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Each Pizza Store depend from one of parallel class hierarchy (NY, Chicago, etc.)">
+    <Position X="12.348" Y="2.541" Height="0.642" Width="1.854" />
+  </Comment>
+  <Class Name="PizzaStore.Pizza.APizza" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAEAAAAAAQAAAAAAAAAQAAAIABAAAAAAAAAAAQQA=</HashCode>
+      <FileName>Pizza\APizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.NYStyle.NYStyleCheesePizza" Collapsed="true">
+    <Position X="0.75" Y="2.5" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.312" />
+        <Point X="1.75" Y="1.312" />
+        <Point X="1.75" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\NYStyle\NYStyleCheesePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.NYStyle.NYStyleClamPizza" Collapsed="true">
+    <Position X="1" Y="3.25" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.318" />
+        <Point X="2" Y="1.318" />
+        <Point X="2" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\NYStyle\NYStyleClamPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.NYStyle.NYStylePepperoniPizza" Collapsed="true">
+    <Position X="1.25" Y="4" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.327" />
+        <Point X="2.25" Y="1.327" />
+        <Point X="2.25" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\NYStyle\NYStylePepperoniPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.NYStyle.NYStyleVeggiePizza" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.307" />
+        <Point X="1.5" Y="1.307" />
+        <Point X="1.5" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\NYStyle\NYStyleVeggiePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.ChicagoStyle.ChicagoStyleCheesePizza" Collapsed="true">
+    <Position X="3.75" Y="2.5" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.316" />
+        <Point X="4.75" Y="1.316" />
+        <Point X="4.75" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\ChicagoStyle\ChicagoStyleCheesePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.ChicagoStyle.ChicagoStyleClamPizza" Collapsed="true">
+    <Position X="4" Y="3.25" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.313" />
+        <Point X="5" Y="1.313" />
+        <Point X="5" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\ChicagoStyle\ChicagoStyleClamPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.ChicagoStyle.ChicagoStylePepperoniPizza" Collapsed="true">
+    <Position X="4.25" Y="4" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.311" />
+        <Point X="5.25" Y="1.311" />
+        <Point X="5.25" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\ChicagoStyle\ChicagoStylePepperoniPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.ChicagoStyle.ChicagoStyleVeggiePizza" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.316" />
+        <Point X="4.5" Y="1.316" />
+        <Point X="4.5" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\ChicagoStyle\ChicagoStyleVeggiePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.CaliforniaStyle.CaliforniaStyleCheesePizza" Collapsed="true">
+    <Position X="7" Y="2.5" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.33" />
+        <Point X="8" Y="1.33" />
+        <Point X="8" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\CaliforniaStyle\CaliforniaStyleCheesePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.CaliforniaStyle.CaliforniaStyleClamPizza" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.336" />
+        <Point X="8.25" Y="1.336" />
+        <Point X="8.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\CaliforniaStyle\ChicagoStyleClamPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.CaliforniaStyle.CaliforniaStylePepperoniPizza" Collapsed="true">
+    <Position X="7.5" Y="4" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.318" />
+        <Point X="8.5" Y="1.318" />
+        <Point X="8.5" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\CaliforniaStyle\ChicagoStylePepperoniPizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Pizza.CaliforniaStyle.CaliforniaStyleVeggiePizza" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="2" />
+    <InheritanceLine Type="PizzaStore.Pizza.APizza" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="1.062" />
+        <Point X="4.75" Y="1.326" />
+        <Point X="7.75" Y="1.326" />
+        <Point X="7.75" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pizza\CaliforniaStyle\ChicagoStyleVeggiePizza.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Factory.APizzaStore" Collapsed="true">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\APizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Factory.CaliforniaPizzaStore" Collapsed="true">
+    <Position X="14.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\CaliforniaPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Factory.ChicagoPizzaStore" Collapsed="true">
+    <Position X="12.25" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\ChicagoPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PizzaStore.Factory.NYPizzaStore" Collapsed="true">
+    <Position X="10" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Factory\NYPizzaStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

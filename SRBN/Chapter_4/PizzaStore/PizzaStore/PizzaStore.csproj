@@ -43,19 +43,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factory\CaliforniaPizzaStore.cs" />
+    <Compile Include="Factory\ChicagoPizzaStore.cs" />
     <Compile Include="Factory\SimplePizzaFactory.cs" />
-    <Compile Include="PizzaStore.cs" />
+    <Compile Include="Factory\NYPizzaStore.cs" />
+    <Compile Include="Factory\APizzaStore.cs" />
+    <Compile Include="Factory\SimplePizzaStore.cs" />
+    <Compile Include="Pizza\CaliforniaStyle\CaliforniaStyleCheesePizza.cs" />
+    <Compile Include="Pizza\CaliforniaStyle\ChicagoStyleClamPizza.cs" />
+    <Compile Include="Pizza\CaliforniaStyle\ChicagoStylePepperoniPizza.cs" />
+    <Compile Include="Pizza\CaliforniaStyle\ChicagoStyleVeggiePizza.cs" />
+    <Compile Include="Pizza\ChicagoStyle\ChicagoStyleCheesePizza.cs" />
+    <Compile Include="Pizza\ChicagoStyle\ChicagoStyleClamPizza.cs" />
+    <Compile Include="Pizza\ChicagoStyle\ChicagoStylePepperoniPizza.cs" />
+    <Compile Include="Pizza\ChicagoStyle\ChicagoStyleVeggiePizza.cs" />
     <Compile Include="Pizza\ClamPizza.cs" />
     <Compile Include="Pizza\CheesePizza.cs" />
-    <Compile Include="Pizza\IPizza.cs" />
+    <Compile Include="Pizza\APizza.cs" />
+    <Compile Include="Pizza\NYStyle\NYStyleClamPizza.cs" />
+    <Compile Include="Pizza\NYStyle\NYStylePepperoniPizza.cs" />
+    <Compile Include="Pizza\NYStyle\NYStyleVeggiePizza.cs" />
+    <Compile Include="Pizza\NYStyle\NYStyleCheesePizza.cs" />
     <Compile Include="Pizza\PepperoniPizza.cs" />
+    <Compile Include="Pizza\PizzaType.cs" />
     <Compile Include="Pizza\VeggiePizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="FactoryDiagram.cd" />
+    <None Include="FactoryMethodDiagram.cd" />
+    <None Include="SimpleFactoryDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

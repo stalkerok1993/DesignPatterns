@@ -1,31 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PizzaStore.Pizza
 {
-    class ClamPizza : IPizza
+    class ClamPizza : APizza
     {
-        public void Bake()
+        public ClamPizza()
         {
-            throw new NotImplementedException();
-        }
-
-        public void Box()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Cut()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Prepare()
-        {
-            throw new NotImplementedException();
+            Name = "Simple Clam Pizza";
+            Dough = "Simple Dough";
+            Sauce = "Simple Sauce";
+            Toppings.Add("Clam");
         }
     }
 }
