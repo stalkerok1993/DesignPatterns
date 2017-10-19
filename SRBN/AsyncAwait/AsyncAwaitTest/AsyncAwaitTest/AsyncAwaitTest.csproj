@@ -52,10 +52,12 @@
     <Compile Include="AsyncAwaitText.Designer.cs">
       <DependentUpon>AsyncAwaitText.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\ThreadLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleLogWriters\ConsoleTextWriter.cs" />
-    <Compile Include="SimpleLogWriters\SimpleLogWriter.cs" />
+    <Compile Include="SimpleLogWriters\ISimpleLogWriter.cs" />
     <Compile Include="SimpleLogWriters\TextBoxLogWriter.cs" />
     <EmbeddedResource Include="AsyncAwaitText.resx">
       <DependentUpon>AsyncAwaitText.cs</DependentUpon>

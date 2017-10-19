@@ -4,71 +4,64 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using AsyncAwaitTest.Logger;
 
 namespace AsyncAwaitTest
 {
-    public class AATest
+    public sealed class AATest
     {
         #region IrrelevantForAsyncAwait
-        ISimpleLogWriter logWriter;
+        private ILogger logWriter;
+        public bool UseInnerLogMethodNames = false;
 
-        public AATest(ISimpleLogWriter logWriter)
-        {
+        public AATest(ThreadLogger logWriter) {
             this.logWriter = logWriter;
+            logWriter.LogMethodDepth = 3;
         }
         
-        public void Log(string message, string methodName = null)
-        {
-            if (methodName == null)
-            {
-                StackTrace st = new StackTrace();
-                methodName = st.GetFrame(1).GetMethod().Name;
-            }
-
-            logWriter.WriteLine($"[{Thread.CurrentThread.ManagedThreadId,2:D}] {methodName,12:S}: {message}");
+        public void Log(string message, string methodName = null) {
+            logWriter.Log(message, UseInnerLogMethodNames ? methodName : null);
         }
 
-        public void LogE(string message)
-        {
+        public void LogE(string message) {
             Log(message, "Execute");
         }
 
-        public void LogA(string message)
-        {
+        public void LogA(string message) {
             Log(message, "AsyncTest");
         }
 
-        public void LogD(string message)
-        {
+        public void LogD(string message) {
             Log(message, "DoSomething");
         }
         #endregion IrrelevantForAsyncAwait
 
-        public void Execute()
-        {
+        public void Execute() {
+            LogE("Calling AsyncTest method.");
             AsyncTest();
+            LogE("AsyncTest method exited.");
 
-            LogE("Block thread (2000 ms). What'll be with ours 'async' call?.");
-            Thread.Sleep(2000);
-            LogE("Thread unblocked, returning.");
+            int blockTimeMs = 5000;
+            LogE($"Blocking main thread for {blockTimeMs} ms.");
+            Thread.Sleep(blockTimeMs);
+            LogE("Main thread unblocked, exiting Execute method.");
         }
 
-        private async void AsyncTest()
-        {
-            LogA("Calling 'async DoSomething()' first time.");
+        private async void AsyncTest() {
+            LogA("Calling 'async DoSomething()' method with 'await Task.Run' for the first time.");
             await Task.Run((Action)DoSomething);
             LogA("Call 'async DoSomething()' returned for the first time.");
 
-            LogA("Calling 'async DoSomething()' second time.");
+            LogA("Calling 'async DoSomething()' method with 'await Task.Run' for the second time.");
             await Task.Run((Action)DoSomething);
             LogA("Call 'async DoSomething()' returned for the second time.");
         }
 
-        private void DoSomething()
-        {
-            LogD("Simulate long algorithm (1000 ms).");
-            Thread.Sleep(1000);
-            LogD("Returning.");
+        private void DoSomething() {
+            int jobTimeMs = 1000;
+            LogD($"Simulate long algorithm in DoSomething (sleep for {jobTimeMs} ms).");
+            Thread.Sleep(jobTimeMs);
+            LogD("Returning from DoSomething.");
         }
     }
 }

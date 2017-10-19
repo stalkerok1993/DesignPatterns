@@ -1,6 +1,7 @@
 ﻿using AsyncAwaitTest;
 using AsyncAwaitTest.SimpleLogWriters;
 using System;
+using AsyncAwaitTest.Logger;
 
 namespace AsuncAwaitConsole
 {
@@ -8,9 +9,13 @@ namespace AsuncAwaitConsole
     {
         static void Main(string[] args)
         {
-            var test = new AATest(new ConsoleLogWriter());
+            ThreadLogger logger = new ThreadLogger(new ConsoleLogWriter());
+            logger.LogMethodNumber = 4;
+            var test = new AATest(logger);
+            test.UseInnerLogMethodNames = false;
             test.Execute();
 
+            Console.WriteLine("Press any key to continue . . .");
             Console.ReadKey();
         }
     }
