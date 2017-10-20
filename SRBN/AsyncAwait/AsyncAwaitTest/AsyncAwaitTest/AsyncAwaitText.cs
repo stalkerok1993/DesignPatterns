@@ -55,6 +55,7 @@ namespace AsyncAwaitTest
         {
             logWriter.LogMethodNumber = 1;
             var test = new AATest(logWriter);
+            test.UseInnerLogMethodNames = true;
             test.Execute();
         }
     }

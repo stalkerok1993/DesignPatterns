@@ -39,7 +39,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonProperCase.Location = new System.Drawing.Point(12, 12);
             this.buttonProperCase.Name = "buttonProperCase";
-            this.buttonProperCase.Size = new System.Drawing.Size(310, 672);
+            this.buttonProperCase.Size = new System.Drawing.Size(310, 640);
             this.buttonProperCase.TabIndex = 0;
             this.buttonProperCase.Text = "Big Friendly Button";
             this.buttonProperCase.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             // buttonUnproperCase
             // 
             this.buttonUnproperCase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.buttonUnproperCase.Location = new System.Drawing.Point(12, 690);
+            this.buttonUnproperCase.Location = new System.Drawing.Point(12, 658);
             this.buttonUnproperCase.Name = "buttonUnproperCase";
             this.buttonUnproperCase.Size = new System.Drawing.Size(310, 23);
             this.buttonUnproperCase.TabIndex = 1;
@@ -67,14 +67,14 @@
             this.textBoxDebug.Name = "textBoxDebug";
             this.textBoxDebug.ReadOnly = true;
             this.textBoxDebug.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxDebug.Size = new System.Drawing.Size(917, 701);
+            this.textBoxDebug.Size = new System.Drawing.Size(917, 669);
             this.textBoxDebug.TabIndex = 2;
             // 
             // AsyncAwaitTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1257, 725);
+            this.ClientSize = new System.Drawing.Size(1257, 693);
             this.Controls.Add(this.textBoxDebug);
             this.Controls.Add(this.buttonUnproperCase);
             this.Controls.Add(this.buttonProperCase);
