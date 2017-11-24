@@ -6,6 +6,8 @@ namespace SimpleSingletone
     {
         static void Main(string[] args)
         {
+            // There are a good article about Singletone in C# in Depth book: http://csharpindepth.com/articles/general/singleton.aspx
+
             Singletone singletone = Singletone.Instance;
 
             if (singletone == Singletone.Instance) {
